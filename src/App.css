@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+
+h3:hover {
+    background-color:dodgerblue;
+    color:azure
+}
