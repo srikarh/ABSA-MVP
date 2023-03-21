@@ -41,3 +41,17 @@ h3:hover {
     background-color:dodgerblue;
     color:azure
 }
+
+.row {
+  display: flex;
+}
+
+.column1 {
+  flex: 40%;
+}
+
+.column2 {
+  flex: 60%;
+  margin-right: 10%;
+}
+

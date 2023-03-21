@@ -1,15 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
-import Progressbar from './Component/Progress_bar';
+import TicketList from './Component/TicketList';
+import React from 'react';
+
 
 function App() {
   return (
     <div className="App">
-     <h3 className="heading">Action Item Tracker</h3>
-      <Progressbar bgcolor="orange" progress='30' height={30} /> 
-      <Progressbar bgcolor="red" progress='60' height={30}/> 
-      <Progressbar bgcolor="#99ff66" progress='50' height={30}/>
-   </div>
+      <h3 className="heading">Action Item Tracker</h3>
+      <TicketList></TicketList>
+    </div>
     /*<div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
