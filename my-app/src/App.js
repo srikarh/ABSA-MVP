@@ -20,7 +20,6 @@ function App() {
                 {/* > */} Learn React
         </div>       
     );
-‍
 }
 
 export default App;
