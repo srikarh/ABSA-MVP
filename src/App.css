@@ -47,11 +47,11 @@ h3:hover {
 }
 
 .column1 {
-  flex: 40%;
+  flex: 30%;
 }
 
 .column2 {
-  flex: 60%;
+  flex: 70%;
   margin-right: 10%;
 }
 

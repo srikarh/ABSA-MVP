@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import React from 'react';
+import React, {useState} from 'react';
 import Progressbar from './Progress_bar';
 
 const Container = styled.div`
@@ -36,17 +36,19 @@ const ticketVals = ['0', '30', '60', '30', '90', '60', '30', '60', '90', '0'];
 const ind = 0;
 
 function TicketList() {
+  const [count, setCount] = useState(0);
+
   return (
     <div class="row">
         <div class="column1">
             <Container>
                 <List>
-                    {ticketNums.map(item => <Card onClick={ticketClick}>{item}</Card>)}
+                    {ticketNums.map(item => <Card onClick={() => setCount(count + 1)}>{item}</Card>)}
                 </List>
             </Container>
         </div>
         <div class="column2">
-          <Progressbar bgcolor="orange" progress={ticketVals[ind]} height={30} /> 
+          <Progressbar bgcolor="orange" progress={count} height={30} /> 
           <Progressbar bgcolor="red" progress='60' height={30}/> 
           <Progressbar bgcolor="#99ff66" progress='50' height={30}/>
         </div>
