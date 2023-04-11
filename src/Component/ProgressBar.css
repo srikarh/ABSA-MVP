@@ -1,0 +1,36 @@
+.progress-bar-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  .progress-bar {
+    width: 400px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #e6e6e6;
+    overflow: hidden;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #007bff;
+    transition: width 0.2s ease-in-out;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  button {
+    margin: 0 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

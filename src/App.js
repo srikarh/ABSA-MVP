@@ -1,31 +1,13 @@
-import './App.css';
-import TicketList from './Component/TicketList';
 import React from 'react';
+import ProgressBar from './Component/ProgressBar';
 
-
-function App() {
+const MyComponent = () => {
   return (
-    <div className="App">
-      <h3 className="heading">Action Item Tracker</h3>
-      <TicketList></TicketList>
+    <div>
+      <h1>My Component</h1>
+      <ProgressBar />
     </div>
-    /*<div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>*/
   );
-}
+};
 
-export default App;
+export default MyComponent;
