@@ -5,7 +5,7 @@ const MyComponent = () => {
   return (
     <div>
       <h1>My Component</h1>
-      <ProgressBar />
+      <ProgressBar progress={95} />
     </div>
   );
 };
