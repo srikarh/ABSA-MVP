@@ -1,11 +1,11 @@
 import React from 'react';
-import ProgressBar from './Component/ProgressBar';
+import BoxList from './Component/BoxList';
 
 const MyComponent = () => {
   return (
     <div>
-      <h1>My Component</h1>
-      <ProgressBar progress={95} />
+      <h1>Task Tracker</h1>
+      <BoxList />
     </div>
   );
 };
