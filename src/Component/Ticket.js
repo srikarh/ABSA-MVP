@@ -1,4 +1,34 @@
 import React, { useState } from "react";
+import styled from 'styled-components';
+import TicketList from "./TicketList";
+
+const Container = styled.div`
+  background: #36393e;
+  display: flex;
+  flex-flow: column wrap; // 2
+  width: 30%;
+  height: 600px;
+  border-radius: 20px;
+  overflow: auto;
+`;
+const List = styled.div`
+  display: flex;
+  justify-content: center; // 3
+  flex-flow: row wrap; // 4
+`;
+
+const Card = styled.div`
+  margin: 20px;
+  background: #fff;
+  height: 400px;
+  width: 90%;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-flow: column; // 5 
+  justify-content: center;
+  align-items: center;
+`;
 
 function Ticket() {
   const [tickets, setTickets] = useState([]);
@@ -43,14 +73,16 @@ function Ticket() {
       </form>
 
       <ul>
-        {tickets.map((ticket, index) => (
-          <li key={index}>
-            <h2>{ticket.title}</h2>
-            <p>{ticket.description}</p>
-            <p>Status: {ticket.status}</p>
-            <p>Priority: {ticket.priority}</p>
-          </li>
-        ))}
+        <Container>
+          <List>
+              {tickets.map((ticket, index) => <Card>
+                <h2>{ticket.title}</h2>
+                <p>{ticket.description}</p>
+                <p>Status: {ticket.status}</p>
+                <p>Priority: {ticket.priority}</p>
+                </Card>)}
+          </List>
+        </Container>
       </ul>
     </div>
   );
