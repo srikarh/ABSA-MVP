@@ -1,0 +1,14 @@
+.message {
+    background-color: #efefef;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .message-sender {
+    font-weight: bold;
+  }
+  
+  .message-content {
+    margin-top: 5px;
+  }
+  
