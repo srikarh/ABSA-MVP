@@ -1,9 +1,9 @@
 import './App.css';
-import TicketList from './Component/TicketList';
+import Ticket from './Component/Ticket';
 import React from 'react';
 
 
-function App() {
+/*function App() {
   return (
     <div className="App">
       <h3 className="heading">Action Item Tracker</h3>
@@ -24,7 +24,16 @@ function App() {
           Learn React
         </a>
       </header>
-    </div>*/
+    </div>
+  );
+}*/
+
+function App() {
+  return (
+    <div>
+      <h1>Ticketing System</h1>
+      <Ticket />
+    </div>
   );
 }
 
